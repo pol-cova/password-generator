@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <title>SimplePassword | {% block title %}{% endblock %}</title>
+</head>
+{% include 'partials/_header.html'%}
+<body>
+    <div class="content">
+        {% block pagecontent %}
+        {% endblock %}
+    </div>
+    <footer></footer>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/copy.js' %}"></script>
+</body>
+</html>
